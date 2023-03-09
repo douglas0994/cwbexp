@@ -1,0 +1,11 @@
+@import url('tipografia.css');
+@import url('global.css');
+@import url('cores.css');
+@import url('header.css');
+
+.introducao {
+  width: 100%;
+  height: 480px;
+  background: url('/img/parque-barigui/barigui-6.jpg') no-repeat center;
+  background-size: cover;
+}
