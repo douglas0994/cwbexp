@@ -1,0 +1,27 @@
+.footer-bg {
+  background-color: var(--cor-p-1);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mapa {
+  padding: 120px;
+}
+
+
+.mapa img {
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: -10px 10px 12px rgba(0, 0, 0, .1);
+}
+
+.copy {
+  background-color: white;
+  padding: 1rem;
+}
+
+@media(max-width: 800px) {
+  .mapa {
+    padding: 40px;
+  }
+}

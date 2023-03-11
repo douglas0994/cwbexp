@@ -14,6 +14,12 @@
   text-transform: uppercase; 
 }
 
+@media(max-width: 600px) {
+  .introducao {
+    width: 100%;
+    height: 320px;
+}
+
 /* PONTOS TURISTICOS */
 
 .pontos-bg {
@@ -62,6 +68,12 @@
       min-width: 320px;
     }
   }
+  @media (max-width: 600px) {
+    .pontos-bg {
+      padding-top: 40px;
+      padding-bottom: 0px;
+    }
+  }
 
   /* DICAS */
 
@@ -98,23 +110,134 @@
     padding: 12px 12px;
   }
 }
+@media (max-width: 500px) {
+  .dicas-info h3 {
+    font-size: 1rem;
+  }
+  .dicas-info p {
+    font-size: 0.875rem;
+  }
+}
+/* COMENTÁRIOS */
 
 .comentarios-bg {
   background-color: var(--cor-1);
-  padding: 120px 0;
+  padding: 80px 0;
 }
+
+.comentarios-soma {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 20px;
+}
+
+
+.comentarios-soma::after {
+  content: '';
+  height: 3px;
+  width: 100%;
+  background: white;
+  grid-column: 1 / 4;
+  margin-bottom: 60px;
+}
+
+.comentarios-soma h3 {
+  font-size: 3rem;
+  letter-spacing: .1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.comentarios-soma span {
+  display: block;
+  font-size: 4rem;
+  text-align: end;
+  color: var(--cor-8);
+  justify-self: end;
+}
+
+
 .comentarios {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 18px;
 }
 
 .comentarios-info {
   flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .comentarios-info img {
   border-radius: 50%;
-  max-height: 120px;
+  max-height: 80px;
+  justify-self: center;
+  margin-right: .5rem;
 }
 
+.comentarios-texto {
+  background-color: var(--cor-0);
+  padding: .7rem 1rem;
+  border-radius: 10px;
+}
+.comentarios-texto h3 {
+  margin-bottom: 4px;
+}
 
+@media(max-width: 1200px) {
+  .comentarios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
+@media(max-width: 800px) {
+  .comentarios-bg {
+    padding: 40px 10px;
+  }
+  .comentarios-soma {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+  } 
+  .comentarios-soma h3 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .comentarios-soma::after {
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width: 600px) {
+  .comentarios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+  .comentarios-info {
+    display: grid;
+  }
+  .comentarios-info img {
+    border-radius: 50%;
+    max-height: 40px;
+  }
+  .comentarios-soma h3 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .comentarios-soma span {
+    font-size: 3rem;
+  }
+  .comentarios-texto {
+    padding: .5rem .5rem;
+    margin-top: 8px;
+  }
+  .comentarios-info img {
+    justify-self: start;
+  }
+}

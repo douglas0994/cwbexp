@@ -24,3 +24,12 @@
   text-transform: uppercase;
   letter-spacing: .1rem;
 }
+
+@media(max-width: 800px) {
+  .menu-nav ul {
+    gap: 10px;
+  }
+  .menu-nav ul li a {
+    padding: .3rem;
+  }
+}
