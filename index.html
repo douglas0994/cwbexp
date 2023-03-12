@@ -7,7 +7,8 @@
   <title>Curitiba Experience</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  
 
   <link rel="stylesheet" href="/css/style.css">
   
@@ -24,7 +25,7 @@
             <a>Pontos</a>
           </li>
           <li>
-            <a>Dicas</a>
+            <a href="#dicas">Dicas</a>
           </li>
           <li><a href="#avaliacoes">Avaliações</a></li>
           <li><a href="#localizacoes">Localizações</a></li>
@@ -40,7 +41,7 @@
     </div>
   </article>
 
-  <article class="pontos-bg">
+  <article data-anima="scroll" class="pontos-bg">
     <div class="container">
       <ul class="pontos">
         <li class="pontos-img">
@@ -63,7 +64,7 @@
     </div>
   </article>
 
-  <article class="container">
+  <article data-anima="scroll" id="dicas" class="container">
     <ul class="dicas">
       <li class="dicas-card">
         <img src="img/centro/largo-3.jpg" alt="dicasparque">
@@ -89,8 +90,8 @@
     </ul>
   </article>
 
-  <article class="comentarios-bg">
-    <div class="container">
+  <article  id="avaliacoes" class="comentarios-bg">
+    <div data-anima="scroll" class="container">
       <div class="comentarios-soma">
         <div>
           <h3 class="cor-p-3">Comentários</h3>
@@ -134,8 +135,8 @@
     </div>
   </article>
 
-  <footer class="footer-bg">
-    <div class="mapa">
+  <footer id="localizacoes" class="footer-bg">
+  <div data-anima="scroll" class="mapa">
       <img src="img/mapa.jpg" alt="endereço">
     </div>
     <div class="copy">
@@ -143,5 +144,18 @@
     </div>
   </footer>
 
+  <section data-modal="container" class="modal-container">
+    <div class="modal">
+      <button data-modal="fechar" class="fechar">X</button>
+      <ul>
+        <li class="font-2-l cor-p-3">Museu Oscar Niemeyer - <span class="cor-8"> Terça a Domingo - 10 ás 18</span></li>
+        <li class="font-2-l cor-p-3">Universidade Livre - <span class="cor-8">Todos os Dias - 06 ás 18</span></li>
+        <li class="font-2-l cor-p-3">Parque Barigui - <span class="cor-8"> Todos os Dias - Aberto 24h</span></li>
+        <li class="font-2-l cor-p-3">Centro Histórico - <span class="cor-8">Todos os Dias - Aberto 24h</span></li>
+      </ul>
+    </div>
+  </section>
+
 </body>
+<script type="module" src="js/script.js"></script>
 </html>
