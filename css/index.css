@@ -105,26 +105,27 @@
 @media (max-width: 800px) {
   .dicas {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+
+   
     gap: 20px;
     padding: 40px 20px;
   }
   .dicas-info {
     padding: 12px 12px;
   }
-  .dicas-card:last-child {
+  .dicas-card {
    grid-column: 1 / 3;
   }
+  .dicas-card img {
+    display: none;
+  }
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .dicas-info h3 {
     font-size: 1rem;
   }
   .dicas-info p {
     font-size: 0.875rem;
-  }
-  .dicas-card img {
-    display: none;
   }
 }
 /* COMENTÁRIOS */
